@@ -12,12 +12,7 @@ export default function UserPosts() {
         fetcher
     );
 
-    console.log("data: ", data);
     if (isLoading) return <p>Loading...</p>;
-
-    if (!session) {
-        return <div>Please Login</div>;
-    }
 
     return <Posts posts={data} />;
 }
