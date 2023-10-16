@@ -1,7 +1,7 @@
 import { btn, logout, login } from "./AuthButton.module.css";
 
 export default function AuthButton() {
-    const session = true;
+    const session = null;
 
     if (session) {
         return (
